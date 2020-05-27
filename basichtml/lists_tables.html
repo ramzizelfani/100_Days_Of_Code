@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 Lists & tables</title>
+  </head>
+  <body>
+    <!-- Unordered Lists-->
+    <ul style="list-style: circle;">
+      <li>Styled Bullet 1 (not recommended)</li>
+      <li>Styled Bullet 2 (not recommended)</li>
+    </ul>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <!-- Ordered Lists -->
+    <ol type="I">
+      <li>Romanian Item 1</li>
+      <li>Romanian Item 2</li>
+      <li>Romanian Item 3</li>
+    </ol>
+    <ol>
+      <li>Ordred Item 1</li>
+      <li>Ordred Item 2</li>
+      <li>Ordred Item 3</li>
+    </ol>
+    <!-- Nested Lists -->
+    <ul>
+      <li>Top Level Item</li>
+      <li>Top Level Item</li>
+      <li>
+        Top Level Item
+        <ul>
+          <li>Nested Item</li>
+          <li>Nested Item</li>
+          <li>Nested Item</li>
+        </ul>
+      </li>
+      <li>Top Level Item</li>
+    </ul>
+    <!-- Tables -->
+    <!-- 
+      Tip: Tables are only used to represent tabular data. Never use Tables to style your website (use CSS Grid and FlexBox instead)
+      In a HTML Table we have a head (thead), a body (tbody) and a footer (tfoot) (optional)
+      tr: Table Row
+      th: Table Header Column
+      td: Table data (Table body Column)
+     -->
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ali</td>
+          <td>Ben Ali</td>
+          <td>somewhere in the world!</td>
+        </tr>
+        <tr>
+          <td>Mustapha</td>
+          <td>Ben Ali</td>
+          <td>somewhere in the world!</td>
+        </tr>
+        <tr>
+          <td>Mohsen</td>
+          <td>Ben Ali</td>
+          <td>somewhere in the world!</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

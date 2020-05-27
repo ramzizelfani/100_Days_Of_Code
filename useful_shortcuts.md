@@ -1,3 +1,5 @@
+### Some useful VS Code shortcuts (Windows Machine)
+
 ###### Empty Comment
 
 ```
@@ -32,4 +34,28 @@ ctrl+K ctrl+U
 
 ```
 Shift + Alt + Down Arrow
+```
+
+###### Go to the begining of the current line
+
+```
+Home Key
+```
+
+###### Bring Multiline Section right
+
+```
+Shift + Tab
+```
+
+###### Go to the end of the current line
+
+```
+End Key
+```
+
+###### Move a line UP | Dow
+
+```
+Alt + Up arrow | Alt + Down Arrow
 ```

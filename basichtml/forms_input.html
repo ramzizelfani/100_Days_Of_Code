@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Input Fields in HTML 5</title>
+  </head>
+  <body>
+    <!-- Tip: If you would like the input to get highlited when you click the label you need to put the label for in the input id 
+    The attribute name is used by the server side programming language to manipulate the input-->
+    <form action="">
+      <div>
+        <label for="name">Name</label> <br />
+        <input type="text" id="name" name="name" value="Ali Ben Ali" />
+      </div>
+      <div>
+        <label for="email">Email</label> <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="test@test.test"
+        />
+      </div>
+      <div>
+        <label for="message">Message</label> <br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="sex">Sex</label> <br />
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="undefined">Undefined</option>
+          <option value="female" selected="true">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label> <br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <div>
+        <label for="birthdate">Birth Date</label> <br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+      <div>
+        <label for="membership">Membership</label> <br />
+        <input type="radio" name="membership" id="membership" value="simple" />
+        Simple
+        <br />
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="standard"
+          checked="true"
+        />
+        Standard
+        <br />
+        <input type="radio" name="membership" id="membership" value="VIP" /> VIP
+      </div>
+      <div>
+        <label for="hobbies">Hobbies</label> <br />
+        <input type="checkbox" name="hobbies" id="hobbies" value="simple" />
+        Sports
+        <br />
+        <input type="checkbox" name="hobbies" id="hobbies" value="standard" />
+        Musique
+        <br />
+        <input type="checkbox" name="hobbies" id="hobbies" value="VIP" /> dance
+      </div>
+      <br />
+      <input type="submit" value="submit" />
+      <!-- Submit using a button -->
+      <!-- <button type="submit">Submit using a button</button> -->
+      <!-- Reset form -->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
