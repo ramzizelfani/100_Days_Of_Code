@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div, span, id, and class</title>
+    <style>
+      .card {
+        border: 2px solid grey;
+        background: honeydew;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+      .enhance {
+        color: yellowgreen;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- IDs are unique through a HTML page, classes could be used multiple times with different elements 
+    In CSS, make sure to use IDs when the styling will be applied to just one element, use classes instead
+  -->
+    <div id="main-header">
+      <h1>My Portfolio</h1>
+      <p>This is me :D</p>
+    </div>
+    <ul id="nav-bar" class="card">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <div id="about" class="card">
+      <h3>About</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+        <span class="enhance">Lorem ipsum dolor sit amet.</span> esse
+        perspiciatis! Illum dicta animi beatae asperiores velit earum autem
+        harum?
+      </p>
+    </div>
+    <div id="contact" class="card">
+      <h3>Contact Me:</h3>
+      <ul>
+        <li><strong>Adress:</strong> 122 Main Ave., Tunis</li>
+        <li>Phone: 22 222 222</li>
+        <li>Email: bali@test.test</li>
+      </ul>
+    </div>
+    <div id="footer">
+      <p>Made with &hearts; by Ramzy - Copyright &copy; 2020</p>
+    </div>
+  </body>
+</html>
