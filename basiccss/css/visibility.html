@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility, Order & Negative margins</title>
+    <style>
+      h1 {
+        /* Setting display to none will completely remove the element rom the DOM, however setting visibility to hidden will reserve the space while hiding the actual content */
+        /* display: none; much more used  */
+        /* visibility: hidden; */
+        color: blue !important;
+      }
+      /* Order of precidence
+          P.S.1: The further down the style is, it is going to take precedence.
+          P.S.2: A class has precedence over an element
+          P.S.3: The important flag will inforce one style over the others
+       */
+
+      .heading {
+        color: red;
+        margin-top: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Hekko World!</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      blanditiis saepe, dolor repellat assumenda culpa a repellendus autem
+      exercitationem odit!
+    </p>
+  </body>
+</html>

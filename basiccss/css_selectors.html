@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* 
+        # is used for ids, 
+        . is used for classes
+        Naming conventions in CSS: classes and ids names should be generic and semantically meaningfull, all lower cases seperated by -
+       */
+      /* Body Styling */
+      body {
+        background-color: coral;
+        margin: 2rem;
+      }
+      #primary-heading {
+        color: blue;
+      }
+      .primary-background {
+        background-color: grey;
+      }
+      #about {
+        color: indigo;
+      }
+      /* Multiple selectors 
+      Always seperated by comas*/
+      #about,
+      #welcome {
+        padding: 5px;
+        font-size: large;
+        border: 2px solid black;
+        margin-top: 10px;
+      }
+      /* Nested Selectors: 
+      id or class name then space then the nested element*/
+      #welcome p {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="primary-background" id="welcome">
+      <h2 id="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eveniet
+        temporibus ad quaerat cupiditate ipsa, tenetur doloremque porro vero
+        labore.
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        repellat vero vitae modi eligendi dolorum atque fugit delectus dolores,
+        laudantium sunt quaerat dolorem corrupti quasi maxime unde facere
+        voluptates eos!
+      </p>
+    </div>
+  </body>
+</html>

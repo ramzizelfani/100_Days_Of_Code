@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline & Block Display Styling</title>
+    <style>
+      /* li items are by default block level elements, in order to change them to inline elements (e.g: to create horizantal menus), someone need to change the li display property from block to inline */
+      /* ul {
+        margin: 0;
+        padding: 0;
+        background: #4969a0;
+        list-style: none;
+        border-radius: 5px;
+      } */
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoration: none;
+        color: #333;
+        padding-right: 20px;
+      }
+      /*
+      li a:hover {
+        color: #444;
+        background-color: #496190;
+      } */
+      /* inline to block */
+      img {
+        display: block;
+        margin: auto;
+      }
+      .box {
+        background: #f4f4f4;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 15px;
+        width: 32.8%;
+        /* setting display inline doesn't work to make divs show next to each other, solution: inline-block  */
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion </a></li>
+    </ul>
+    <br /><br />
+    <img src="../basichtml/Images/leaf.png" alt="Leaf Image" />
+    <img src="../basichtml/Images/leaf.png" alt="Leaf Image" />
+    <div class="box">
+      <h3>
+        heading
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
+        explicabo tempora? Quibusdam reprehenderit fugit, veritatis nesciunt
+        facilis accusamus voluptates, tempora quia ab deleniti officia eos
+        dolore. Quaerat eveniet quo blanditiis?
+      </p>
+    </div>
+    <div class="box">
+      <h3>
+        heading
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
+        explicabo tempora? Quibusdam reprehenderit fugit, veritatis nesciunt
+        facilis accusamus voluptates, tempora quia ab deleniti officia eos
+        dolore. Quaerat eveniet quo blanditiis?
+      </p>
+    </div>
+    <div class="box">
+      <h3>
+        heading
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
+        explicabo tempora? Quibusdam reprehenderit fugit, veritatis nesciunt
+        facilis accusamus voluptates, tempora quia ab deleniti officia eos
+        dolore. Quaerat eveniet quo blanditiis?
+      </p>
+    </div>
+  </body>
+</html>

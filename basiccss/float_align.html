@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float & Allign</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+      .container {
+        /* width: 900px; */
+        max-width: 960px;
+        margin: 30px auto;
+      }
+      .clr {
+        clear: both;
+      }
+      .box {
+        background: #f4f4f4;
+        border: solid 1px #333;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+      /* text-allign property: left (default), right, center, justify */
+      #box-1 p {
+        text-align: center;
+      }
+      #box-2 {
+        float: left;
+        width: 70%;
+      }
+      #box-3 {
+        float: right;
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos
+          laudantium ipsum cumque totam temporibus corrupti odio. Vero, sapiente
+          fugiat!
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quis
+          dicta voluptate consectetur fugit aperiam sit perferendis nemo quas
+          fuga cumque ab, nobis accusamus? Amet soluta dolore reiciendis earum
+          quis?
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus fugiat consequuntur assumenda? Labore eius eum
+          tempora quis veniam nam modi cupiditate, libero repellat illum,
+          repellendus enim minima nulla cumque.
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div id="box-4" class="box">
+        <h3>
+          Heading
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem minus fugiat consequuntur assumenda? Labore eius eum
+          tempora quis veniam nam modi cupiditate, libero repellat illum,
+          repellendus enim minima nulla cumque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

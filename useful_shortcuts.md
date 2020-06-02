@@ -59,3 +59,15 @@ End Key
 ```
 Alt + Up arrow | Alt + Down Arrow
 ```
+
+###### Zoom In
+
+```
+Ctrl + plus sign
+```
+
+###### Zoom Out
+
+```
+Ctrl + minus sign
+```

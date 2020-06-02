@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fonts in CSS</title>
+    <style>
+      /* font styling is usually added to the head selector (Applied to the whole page) */
+      /* CSS Web Safe Fonts are a list of fonts that are available on all browsers ,no need to include them on your css stylesheet like other fonts */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        /* font-size default value is 16px */
+        font-size: 18px;
+        line-height: 2em;
+      }
+      #welcome p span {
+        font-weight: bold;
+      }
+      #about p span {
+        font-style: italic;
+      }
+      /* 
+        CSS Units: Absolute ones
+          - cm (centimeters)
+          - mm (millimeters)
+          - in (inches: 1in = 2.54cm)
+          - px (pixels: 1px = 1/96th of 1in)
+          - pt (points: 1pt = 1/72th of 1in)
+          - pc (picas picas: 1pc = 12pt)
+        CSS Relative Units:
+          - % (To parent Element)
+          - em (To font-size or margin or line height... of parent element)
+          - rem (to font size of root element)
+          - vw (To 1% of viewport width)
+          - vh (To 1% of viewport height)
+      */
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 id="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span>Lorem, ipsum dolor.</span> Libero eveniet temporibus ad quaerat
+        cupiditate ipsa, tenetur doloremque porro vero labore.
+      </p>
+    </div>
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        repellat <span>Lorem ipsum dolor sit amet.</span> vero vitae modi
+        eligendi dolorum atque fugit delectus dolores, laudantium sunt quaerat
+        dolorem corrupti quasi maxime unde facere voluptates eos!
+      </p>
+    </div>
+  </body>
+</html>
