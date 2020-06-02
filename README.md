@@ -1,3 +1,6 @@
-# modernhtmlandcss
+#About:
+This Repo will track my journey with the #100DaysOfCode challenge, I will try to keep committing to this repository and track my journey through learning modern web development from the bottom up starting from basic HTML & CSS till mastering modern Frameworks and Development Stacks (React, Node, MERN, JAM, ES6+, ...).
+Here is my planning
 
-This Repo contains all the code/projects for the Traversy Media Modern HTML and CSS Masterclass
+1. HTML5 and CSS3 refresh based on the amazing Modern HTML & CSS from beginning course taught by the phenominal Brad Traversy (Duration: To Be Determined)
+2. To Be Determined
