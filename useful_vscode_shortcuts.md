@@ -71,3 +71,9 @@ Ctrl + plus sign
 ```
 Ctrl + minus sign
 ```
+
+###### Open a New Terminal
+
+```
+Ctrl + Shift + `
+```
