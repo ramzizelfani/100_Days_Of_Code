@@ -77,3 +77,9 @@ Ctrl + minus sign
 ```
 Ctrl + Shift + `
 ```
+
+###### Multiline Editing
+
+```
+Ctrl +Shift + Alt + ArrowUp | Ctrl + Shift + Alt + ArrowDown
+```
