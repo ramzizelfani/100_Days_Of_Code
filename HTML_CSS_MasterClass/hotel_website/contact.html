@@ -16,6 +16,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
     <title>SL Hotel | About</title>
   </head>
   <body>
@@ -35,8 +40,8 @@
       <div class="container">
         <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
         <p class="lead">Please fill out the form below to contact us</p>
-        <!-- <form action="contact.js"> -->
-        <form action="#" method="post" name="contact-form" id="contact-form">
+        <form action="/submit_form.php">
+          <!-- <form action="#" method="post" name="contact-form" id="contact-form"> -->
           <div class="form-group">
             <label for="name"> Name </label>
             <input
@@ -98,7 +103,8 @@
     </footer>
 
     <!-- Submit form script -->
-    <script>
+    <!-- To Do Later on -->
+    <!-- <script>
       // Name and Email validation Function.
       const validation = () => {
         let name = document.getElementById('name').value;
@@ -106,10 +112,10 @@
         let message = document.getElementById('message').value;
         const emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
         if (name === '' || email === '' || message === '') {
-          alert('Please fill all fields...!!!!!!');
+          console.log('Please fill all fields...!!!!!!');
           return false;
         } else if (!email.match(emailReg)) {
-          alert('Invalid Email...!!!!!!');
+          console.log('Invalid Email...!!!!!!');
           return false;
         } else {
           return true;
@@ -122,7 +128,7 @@
         let message = document.getElementById('message').value;
         if (validation()) {
           // Post Request to the server goes here
-          alert(
+          console.log(
             `${message}  by ${name} owner of the
               ${email} has been submitted Successfully......`
           );
@@ -130,7 +136,7 @@
       };
       document
         .getElementById('submit-form')
-        .addEventListener('click', submitForm);
-    </script>
+        .addEventListener('click', console.log('clicked'));
+    </script> -->
   </body>
 </html>

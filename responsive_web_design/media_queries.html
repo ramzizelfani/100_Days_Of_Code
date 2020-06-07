@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: gray;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+      h1 {
+        display: none;
+      }
+      /* To setup a media-query rule we use the @media() keyword */
+      /* smartphones */
+      /* The only screen option means that this only apply to media of type screen */
+      /* syntax: @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+        CSS-Code;
+      } */
+      /* media types: all (default), screen, print, speech   */
+      @media only screen and (max-width: 500px) {
+        body {
+          background: red;
+        }
+        #smartphone h1 {
+          display: block;
+        }
+      }
+      /* tablets */
+      @media (max-width: 768px) and (min-width: 501px) {
+        body {
+          background: blue;
+        }
+        #tablet h1 {
+          display: block;
+        }
+      }
+      /* normal */
+      @media (max-width: 1200px) and (min-width: 769px) {
+        body {
+          background: green;
+        }
+        #normal h1 {
+          display: block;
+        }
+      }
+      /* wide-screen */
+      @media (min-width: 1201px) {
+        body {
+          background: black;
+        }
+        #wide-screen h1 {
+          display: block;
+        }
+      }
+
+      /* landscape */
+      @media (max-height: 500px) {
+        body {
+          background: orange;
+        }
+        #landscape h1 {
+          display: block;
+        }
+      }
+    </style>
+    <!-- <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css"> -->
+  </head>
+  <body>
+    <div id="wide-screen"><h1>Wide Screen</h1></div>
+    <div id="normal"><h1>Normal</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="smartphone"><h1>Smartphone</h1></div>
+    <div id="landscape"><h1>Landscape</h1></div>
+  </body>
+</html>

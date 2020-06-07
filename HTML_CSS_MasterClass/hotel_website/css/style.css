@@ -95,6 +95,7 @@ p {
 /* heading utility classes */
 .l-heading {
   font-size: 40px;
+  line-height: 1.2rem;
 }
 
 /* END CORE STYLES */
@@ -114,7 +115,7 @@ p {
 }
 /* arranging the .logo to the left and the ul to the right */
 /* Here we will use float to achive that but it is recommended to use flexbox or grid display */
-.logo {
+#navbar .logo {
   float: left;
   padding-top: 20px;
 }
@@ -158,7 +159,7 @@ p {
 }
 /* Home Info */
 #home-info {
-  height: 400px;
+  height: 450px;
 }
 #home-info .info-img {
   float: left;
@@ -211,7 +212,7 @@ p {
 
 /* Testimonials */
 #testimonials {
-  height: 600px;
+  height: 100%;
   background: url('../img/test-bg.jpg') no-repeat center center/cover;
   padding-top: 100px;
 }

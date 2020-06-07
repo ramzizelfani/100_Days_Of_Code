@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vh & Vw | viewport-height & viewport-width</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        /* background: #333; */
+        background: #333 url('https://source.unsplash.com/daily') no-repeat
+          center center/cover;
+        color: #fff;
+        /* If we would like to set up the header background for the whole page */
+        /* Setting height to 100% will not chqnge any thing */
+        /* height: 100%; */
+        /* We should use the vh unit */
+        height: 100vh;
+        /* width: 50vw; */
+        text-align: center;
+        padding: 2rem;
+        padding-top: 15rem;
+      }
+      header h1 {
+        font-size: 3rem;
+      }
+      header p {
+        margin: 1rem 0;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #eee;
+        background: #333;
+        border-radius: 1rem;
+        padding: 0.75rem 2rem;
+      }
+      .btn:hover {
+        color: #aaa;
+        background: #666;
+      }
+      section {
+        padding: 2rem;
+      }
+      @media (max-height: 450px) {
+        header {
+          padding-top: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+        libero accusamus sit delectus laborum atque.
+      </p>
+      <a href="#" class="btn">Find Out More</a>
+    </header>
+    <section>
+      <h3>About our company:</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sint
+        impedit nemo delectus fugiat, odit consectetur culpa molestiae soluta
+        earum!
+      </p>
+    </section>
+  </body>
+</html>
