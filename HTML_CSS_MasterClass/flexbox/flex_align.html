@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Align</title>
+    <style>
+      #container {
+        /* margin-top: 5rem; */
+        /* padding-top: 2rem; */
+        background: #666;
+        height: 100vh;
+        display: flex;
+        /* justify-content: Align items horizantally
+        flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-around;
+        justify-content: space-between; 
+        justify-content: space-evenly; */
+        justify-content: center;
+        /* Align items vertically (There must be a height) */
+        align-items: flex-start;
+        /* 
+          Align-items options: 
+          center
+          flex-start
+          flex-end
+          baseline
+          flex-start vs baseline:  the flex-start value will align flex items at the starting edge of the cross-axis of the flex container. The baseline value will align flex items along their content's baseline.
+        */
+        /* flex-wrap: wrap; */
+        /* Align vertically where there is space */
+        /* align-content: space-between; */
+        /* 
+          Options: 
+          center
+          flex-start
+          flex-end
+          space-between
+          space-around
+          stretch
+        */
+      }
+      .item {
+        background: #f4f4f4;
+        border: #ccc 1px solid;
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem;
+        /* width: 300px; */
+        flex-basis: 100px;
+      }
+      .item-1 {
+        order: 2;
+      }
+      .item-2 {
+        /* flex: 3; */
+        /* align single item vertical */
+        align-self: flex-end;
+        order: 3;
+      }
+
+      .item-3 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="item item-1"><h3>Item 1</h3></div>
+      <div class="item item-2"><h3>Item 2</h3></div>
+      <div class="item item-3"><h3>Item 3</h3></div>
+    </div>
+  </body>
+</html>

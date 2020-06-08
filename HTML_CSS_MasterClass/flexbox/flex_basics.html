@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basics</title>
+    <style>
+      /* Max flex columns/items to display in one row without items go out of the screen is 12 */
+      #container {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* setting flex-wrap to wrap will wrap the items that go out of the screen to the next row */
+        flex-wrap: wrap;
+        /* flex-flow: shrtcut for flex-direction and flex-wrap */
+        /* flex-flow: row wrap; */
+      }
+      .item {
+        background-color: #f4f4f4;
+        border: #ccc solid 1px;
+        padding: 1rem;
+        text-align: center;
+        margin: 0.75rem;
+        /* Make all the flex childs equal and flex children across the whole row */
+        flex: 1;
+      }
+      .item:first-child {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- A nice emmet syntax to generate three divs with three h3 childs, using the $ money sign will dynamically set the text within the h3 elements -->
+      <!-- .item{<h3>Item $</h3>}*3 -->
+      <div class="item"><h3>Item 1</h3></div>
+      <div class="item"><h3>Item 2</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+    </div>
+  </body>
+</html>
