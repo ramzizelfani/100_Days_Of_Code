@@ -4,9 +4,12 @@
   padding: 0;
   margin: 0;
 }
+html,
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
+  /* height: 100%;
+  width: 100%; */
 }
 a {
   text-decoration: none;
@@ -17,13 +20,27 @@ p {
 }
 
 /* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
 .text-primary {
   color: #93cb52;
+}
+.text-center {
+  text-align: center;
 }
 .l-heading {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 4rem;
+}
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 2rem;
 }
 .lead {
   font-size: 1.3rem;
@@ -45,7 +62,44 @@ p {
   background: #333;
   color: #fff;
 }
-
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+.list li {
+  padding: 0.5rem 0;
+  border: #444 dotted 1px;
+}
 /* Navbar */
 #navbar {
   display: flex;
@@ -55,7 +109,7 @@ p {
   background: #333;
   color: #fff;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 1000;
   padding: 1rem;
 }
 #navbar ul {
@@ -80,7 +134,7 @@ p {
 }
 #showcase .showcase-content {
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -89,7 +143,69 @@ p {
   padding: 0 2rem;
   /* overlay */
   position: absolute;
-  top: 3.75rem;
+  top: 4rem;
   left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+/* What Section */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* Who Section */
+#who {
+  display: flex;
+}
+#who div {
+  flex: 1;
+}
+#who .who-img {
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+/* Clients Section */
+#clients .items {
+  display: flex;
+}
+
+#clients .items div img {
+  display: block;
+  margin: auto;
+  /* 60% of its container */
+  width: 60%;
+}
+/* Contact Section */
+#contact {
+  display: flex;
+  /* height: 100%; */
+}
+#contact div {
+  flex: 1;
+}
+#contact .contact-form .form-group {
+  margin: 0.75rem 0;
+}
+#contact .contact-form label {
+  display: block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+/* #contact .map { */
+/* height: 100%; */
+/* } */
