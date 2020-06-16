@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadows</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #fff;
+
+        /* offset-x | offset-y | color */
+        box-shadow: 10px 10px teal;
+        /* offset-x | offset-y | blur-radius | color */
+        box-shadow: 10px 10px 5px teal;
+        /* inset | offset-x | offset-y | color */
+        box-shadow: inset -3px -3px teal;
+        /* multiple Shadows */
+        box-shadow: 5px 5px teal, -5px -5px 10px olive;
+      }
+      .box:first-child {
+        /* Negative Values */
+        box-shadow: -10px -10px teal;
+      }
+      .box:last-child {
+        /* offset-x | offset-y | blur-radius |spread-radius */
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+          dignissimos!
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+          dignissimos!
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+          dignissimos!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

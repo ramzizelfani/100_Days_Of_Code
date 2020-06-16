@@ -16,6 +16,7 @@
 1. html tag class or id name or any other attribute name
 2. All javascript-file.js files except ReactComponent.js
 3. file-name.json
+4. --css-variable
 
 ### snake_case
 
