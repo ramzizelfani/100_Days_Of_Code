@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font: normal 1rem/1.4 'Arial', sans-serif;
+  background: #f4f4f4;
+}
+#navbar ul {
+  list-style: none;
+}
+#navbar ul li {
+  color: #333;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+/* Hide nested uls by default */
+#navbar ul li ul {
+  display: none;
+}
+#navbar ul li:hover {
+  cursor: pointer;
+  background: coral;
+  color: #fff;
+}
+#navbar ul li:hover a {
+  color: #fff;
+}
+/* Nested dropdown show */
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  margin-top: 1rem;
+}
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+  border-bottom: #ccc solid 1px;
+}
+#navbar ul li:hover ul li a {
+  color: #333;
+}
+#navbar ul li:hover ul li:hover {
+  background: e0e0e0;
+  border-bottom: #777 solid 1px;
+}
+#navbar ul li:hover ul li:hover,
+#navbar ul li:hover ul li:hover a {
+  color: #777;
+}
+#navbar ul li:hover ul li span {
+}
