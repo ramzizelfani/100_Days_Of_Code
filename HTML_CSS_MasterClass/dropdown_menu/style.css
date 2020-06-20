@@ -1,3 +1,8 @@
+:root {
+  --primary-color: coral;
+  --secondary-color: chocolate;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,7 +32,7 @@ body {
 }
 #navbar ul li:hover {
   cursor: pointer;
-  background: coral;
+  background: var(--primary-color);
   color: #fff;
 }
 #navbar ul li:hover a {
@@ -38,7 +43,7 @@ body {
   display: block;
   position: absolute;
   left: 0px;
-  width: 200px;
+  width: 15rem;
   margin-top: 1rem;
 }
 #navbar ul li:hover ul li {
@@ -58,4 +63,39 @@ body {
   color: #777;
 }
 #navbar ul li:hover ul li span {
+  float: right;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+#navbar ul li:hover ul li:hover span {
+  background: var(--secondary-color);
+}
+
+#showcase {
+  display: flex;
+  /* flex-direction: column; */
+  height: calc(100vh - 50px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  background: var(--primary-color);
+}
+#showcase h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+@media only screen and (max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
 }
