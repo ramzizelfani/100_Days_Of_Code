@@ -1,32 +1,36 @@
 ### camelCase
 
-1. All variables of type let or var in JavaScript
-2. Reference-based JavaScript datatypes (a.k.a Objects and Arrays) defined using the const keyword
-3. Javascript functionName
-   Javascript classMethodName
+1. let variableName
+2. var variableName (using the keyword var is not recommended)
+3. const objectName
+4. const arrayName
+5. javascriptFunctionName
+6. javascriptClassMethodName
 
 ### PascalCase
 
-1. ReactComponent file
-2. Javascript ClassName
-3. classConstructor
+1. ReactComponent.js
+2. JavascriptClassName
+3. JavascruptClassConstructor
 
 ### kebab-case (a.k.a spinal-case, param-case, dash-case, lisp-case)
 
-1. html tag class or id name or any other attribute name
-2. All javascript-file.js files except ReactComponent.js
+1. htmltags-attributevalue
+2. javascript-file.js (except ReactComponent.js)
 3. file-name.json
-4. --css-variable
+4. --css-ariable
+5. @function sass-function(\$params)
 
 ### snake_case
 
-1. Folders/projects names
-2. html_file.html
-3. style_file.css
+1. folder_name
+2. project_name
+3. html_file.html
+4. style_file.css
 
 ### CONSTANT_CASE
 
-1. Primitive JavaScript datatypes (Number, String, Boolean, Symbol, Undefined, Null) defined using the const keyword
+1. const VARIABLE*NAME= *"Value"\_ ( Varible of type Number, String, Boolean, Symbol, Undefined, or Null - a.k.a primitive data types)
 2. MARKDOWN_DOCUMENTATION_FILE.md
 
 ** List To Be Continued/Updated occasionally **
