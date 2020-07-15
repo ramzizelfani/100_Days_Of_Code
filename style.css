@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+/* Header */
+/* NavBar */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+}
+#navbar .container {
+  display: flex;
+
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 1rem;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+  background: #cd5c5c;
+  border-radius: 5px;
+}
+#navbar h1 a {
+  color: #fff;
+}
+/* Header Content */
+#header-content {
+  background: url(https://www.100daysofcode.com/images/blake-connally-373084.jpg)
+    no-repeat center center / cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#header-content h1 {
+  font-size: 4rem;
+  color: #fff;
+}
