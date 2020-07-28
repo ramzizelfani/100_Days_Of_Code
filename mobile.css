@@ -1,0 +1,64 @@
+#navbar .container {
+  flex-direction: column;
+}
+.logo {
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: dotted 1px var(--secondary-color);
+}
+#header-content {
+  height: 400px;
+}
+#header-content h1 {
+  font-size: 2rem;
+}
+#header-content p {
+  font-size: 1rem;
+}
+#projects .projects-container {
+  grid-template-columns: 1fr;
+}
+#about {
+  background: url(/img/about-img.jpg) no-repeat center center/cover;
+}
+#about .about {
+  flex-direction: column;
+}
+.about-img {
+  background: none;
+}
+.about-img h3,
+.about-content p {
+  border: none;
+  color: var(--light-color);
+}
+.text-fields {
+  grid-template-areas:
+    'name-input'
+    'email-input'
+    'phone-input'
+    'subject-input'
+    'message-input';
+}
+.contact-info {
+  grid-template-columns: 1fr;
+}
+.contact-info div {
+  border-bottom: 1px dotted var(--secondary-color);
+}
+.contact-info div:last-child {
+  border-bottom: none;
+}
+.contact-info i {
+  border-radius: 0%;
+  border: none;
+}
+.footer-content .container {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.footer-content .container p {
+  text-align: center;
+  border-bottom: 1px dotted var(--secondary-color);
+}
