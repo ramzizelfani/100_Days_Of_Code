@@ -4,4 +4,7 @@ This Repo will track my journey with the #100DaysOfCode challenge, I will try to
 Here is my planning
 
 1. Learn HTML5 and CSS3: i am using the amazing "Modern HTML & CSS from beginning" course taught by the phenominal Brad Traversy (Duration: To Be Determined)
+
+   - Click here for [Live Demo](https://zelfa100daysofcode.netlify.app/index.html#projects 'Some of My Vanilla HTML & CSS projects developed during the challenge').
+
 2. To Be Determined
